@@ -12,15 +12,22 @@ class ComicSeeder extends Seeder
      */
     public function run()
     {
-        $comic = new Comic();
+        
         $comics = config('comics');
 
-        foreach($comics as $comic){
+        foreach($comics as $value){
 
-            $comics->
+            $comic = new Comic();
 
+            $comic->title = $value['title'];
+            $comic->description = $value['description'];
+            $comic->thumb = $value['thumb'];
+            $comic->price = $value['price'];
+            $comic->series = $value['series'];
+            $comic->sale_date = $value['sale_date'];
+            $comic->type = $value['type'];
 
-            $comics->save()
+            $comic->save();
         }
     }
 }
