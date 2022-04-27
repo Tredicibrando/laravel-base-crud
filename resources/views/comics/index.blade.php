@@ -38,6 +38,22 @@
                         <td>
                             {{$el->type}}
                         </td>
+                        <td>
+                            <button>
+                                <a href="{{route('comics.edit',$el)}}">Modifica</a>
+                            </button>
+                        </td>
+                        <td>
+                            <form action="{{route('comics.destroy',$el)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit">
+                                    Elimina
+                                </button>
+                            </form>
+                        </td>
+                        
+                        
                     </tr>
                 @endforeach
 

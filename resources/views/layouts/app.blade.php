@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{route('comics.index')}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{route('comics.create')}}">Crea il tuo fumetto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     
     @yield('content')
 
