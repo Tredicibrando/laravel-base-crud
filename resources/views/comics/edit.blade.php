@@ -21,8 +21,8 @@
             <div>
                 <label for="type">Scegli il tipo di fumetto</label>
                 <select name="type" id="type">
-                    <option value="comic book"{{$comic->type == 'comic book' ? 'selected': ''}}>Comic Book</option>
-                    <option value="graphic novel"{{$comic->type == 'graphic novel' ? 'selected': ''}} >Graphic Novel</option>
+                    <option value="comic-book"{{$comic->type == 'comic-book' ? 'selected': ''}}>comic-book</option>
+                    <option value="graphic-novel"{{$comic->type == 'graphic-novel' ? 'selected': ''}} >graphic-novel</option>
                 </select>
             </div>
 
